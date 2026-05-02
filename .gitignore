@@ -1,17 +1,14 @@
-
 # dependencies
-node_modules
-.pnp
-.pnp.js
+/node_modules
+/.pnp
+/.pnp.js
 
-# testing
-coverage
-
-#pkg
+# build outputs
+/dist
 /locales
 /styles.css
 /.cache
-/dist
+/coverage
 
 # misc
 .DS_Store
@@ -23,5 +20,5 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# Intellij-based IDEs
-.idea
+# IDE
+/.idea
