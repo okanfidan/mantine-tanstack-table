@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/okanfidan/mantine-tanstack-table",
   "bugs": {
-    "url": "https://github.com/KevinVandy/mantine-tanstack-table/issues"
+    "url": "https://github.com/okanfidan/mantine-tanstack-table/issues"
   },
   "sideEffects": [
     "*.css"
