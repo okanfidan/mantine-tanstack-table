@@ -8,11 +8,10 @@ node_modules
 coverage
 
 #pkg
-locales
-styles.css
-.cache
+/locales
+/styles.css
+/.cache
 /dist
-dist
 
 # misc
 .DS_Store
