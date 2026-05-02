@@ -1,0 +1,7 @@
+.root {
+  background-color: var(--mtt-base-background-color);
+}
+
+.root-grid {
+  display: grid;
+}

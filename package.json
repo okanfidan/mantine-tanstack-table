@@ -1,0 +1,131 @@
+{
+  "version": "1.0.0",
+  "license": "MIT",
+  "name": "mantine-tanstack-table",
+  "description": "A fully featured Mantine v9+ implementation of TanStack React Table V8, written from the ground up in TypeScript.",
+  "author": "Okan Fidan",
+  "keywords": [
+    "react-table",
+    "mantine",
+    "tanstack table",
+    "data table",
+    "data grid"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okanfidan/mantine-tanstack-table"
+  },
+  "homepage": "https://github.com/okanfidan/mantine-tanstack-table",
+  "bugs": {
+    "url": "https://github.com/KevinVandy/mantine-tanstack-table/issues"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "dist/index.cjs",
+  "module": "dist/index.esm.mjs",
+  "types": "dist/index.esm.d.mts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.esm.d.mts",
+        "default": "./dist/index.esm.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json",
+    "./locales/*": "./locales/*",
+    "./styles.css": "./styles.css"
+  },
+  "files": [
+    "dist",
+    "locales",
+    "styles.css",
+    "src"
+  ],
+  "size-limit": [
+    {
+      "path": "dist/index.cjs",
+      "limit": "53 KB"
+    },
+    {
+      "path": "dist/index.esm.mjs",
+      "limit": "50 KB"
+    }
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "build": "pnpm lib:build",
+    "build-locales": "pnpm lib:build-locales",
+    "build-lib": "pnpm lib:build-lib",
+    "dev": "pnpm lib:dev",
+    "lib:build": "pnpm build-lib && pnpm build-locales",
+    "lib:build-locales": "node build-locales.mjs",
+    "lib:build-lib": "rm -rf dist && rollup -c rollup.config.mjs && size-limit",
+    "lib:dev": "rollup -c rollup.config.mjs --watch",
+    "lint": "eslint .",
+    "size": "size-limit"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-react": "^7.28.5",
+    "@faker-js/faker": "^10.4.0",
+    "@mantine/core": "9.1.1",
+    "@mantine/dates": "9.1.1",
+    "@mantine/hooks": "9.1.1",
+    "@rollup/plugin-babel": "^7.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@size-limit/preset-small-lib": "^12.1.0",
+    "@tabler/icons-react": "3.41.1",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.59.1",
+    "@typescript-eslint/parser": "^8.59.1",
+    "@vitejs/plugin-react": "^6.0.1",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.20",
+    "eslint": "^10.3.0",
+    "eslint-plugin-perfectionist": "^5.9.0",
+    "mantine-contextmenu": "^8.3.13",
+    "postcss": "^8.5.13",
+    "postcss-preset-mantine": "^1.18.0",
+    "postcss-simple-vars": "^7.0.1",
+    "prop-types": "^15.8.1",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-is": "^19.2.5",
+    "rollup": "^4.60.2",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-delete": "^3.0.2",
+    "rollup-plugin-dts": "^6.4.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "size-limit": "^12.1.0",
+    "tslib": "^2.8.1",
+    "typescript": "^6.0.3",
+    "typescript-plugin-css-modules": "^5.2.0",
+    "vite": "^8.0.10"
+  },
+  "dependencies": {
+    "@tanstack/match-sorter-utils": "8.19.4",
+    "@tanstack/react-table": "8.21.3",
+    "@tanstack/react-virtual": "3.13.24"
+  },
+  "peerDependencies": {
+    "@mantine/core": "^7.17.7",
+    "@mantine/dates": "^7.17.7",
+    "@mantine/hooks": "^7.17.7",
+    "@tabler/icons-react": ">=2.23.0",
+    "clsx": ">=2",
+    "dayjs": ">=1.11",
+    "react": ">=18.0",
+    "react-dom": ">=18.0"
+  }
+}
