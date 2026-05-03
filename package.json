@@ -1,5 +1,5 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "name": "mantine-tanstack-table",
   "description": "A fully featured Mantine v9+ implementation of TanStack React Table V8, written from the ground up in TypeScript.",
@@ -119,13 +119,13 @@
     "@tanstack/react-virtual": "3.13.24"
   },
   "peerDependencies": {
-    "@mantine/core": "^7.17.7",
-    "@mantine/dates": "^7.17.7",
-    "@mantine/hooks": "^7.17.7",
-    "@tabler/icons-react": ">=2.23.0",
-    "clsx": ">=2",
-    "dayjs": ">=1.11",
-    "react": ">=18.0",
-    "react-dom": ">=18.0"
+    "@mantine/core": "^9.1.1",
+    "@mantine/dates": "^9.1.1",
+    "@mantine/hooks": "^9.1.1",
+    "@tabler/icons-react": ">=3.41.1",
+    "clsx": ">=2.1.1",
+    "dayjs": ">=1.11.20",
+    "react": ">=19.2.5",
+    "react-dom": ">=19.2.5"
   }
 }
